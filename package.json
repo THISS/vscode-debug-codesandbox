@@ -1,0 +1,13 @@
+{
+  "name": "vscode-debug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  },
+  "packageManager": "yarn@3.2.2"
+}
