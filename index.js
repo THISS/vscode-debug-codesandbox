@@ -1,5 +1,5 @@
-import http from 'http'
-import {
+const http = require('http')
+const {
   sum,
   divide,
   multiply,
@@ -7,7 +7,7 @@ import {
   takeAway,
   squareRoot,
   square,
-} from './src/calculator'
+} = require('./src/calculator')
 
 function wrapInHtml(title, toPrint) {
   return `<div>${title}: ${toPrint}</div>`
@@ -16,16 +16,13 @@ function wrapInHtml(title, toPrint) {
 function createDocument(body) {
   return `<!DOCTYPE html>
   <html>
-  
   <head>
     <title>VS Code Debug</title>
     <meta charset="UTF-8" />
   </head>
-  
   <body>
     ${body}
   </body>
-  
   </html>`
 }
 
