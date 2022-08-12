@@ -24,6 +24,7 @@ function sum(arrayOfNumbers) {
   }
   return result
 }
+exports.sum = sum
 
 /**
  * inverse of sum - subtract all numbers passed in
