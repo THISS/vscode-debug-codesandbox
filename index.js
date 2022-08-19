@@ -28,16 +28,16 @@ function createDocument(body) {
 
 function createBodyHtml() {
   return `<main>
-  ${wrapInHtml('sum', sum(1, 2, 3, 4, 5))}
-  ${wrapInHtml('subtract', takeAway(1, 2, 3, 4, 5))}
-  ${wrapInHtml('divide', divide(1, 2, 3, 4, 5))}
-  ${wrapInHtml('multiply', multiply(1, 2, 3, 4, 5))}
-  ${wrapInHtml('square', square(3))}
-  ${wrapInHtml('squareRoot', squareRoot(9))}
-  ${wrapInHtml('toThePower', toThePower(9, 3))}
+  ${wrapInHtml('sum', sum([1, 2, 3, 4, 5]))}
   </main>`
+  // ${wrapInHtml('subtract', takeAway(1, 2, 3, 4, 5))}
+  // ${wrapInHtml('divide', divide(1, 2, 3, 4, 5))}
+  // ${wrapInHtml('multiply', multiply(1, 2, 3, 4, 5))}
+  // ${wrapInHtml('square', square(3))}
+  // ${wrapInHtml('squareRoot', squareRoot(9))}
+  // ${wrapInHtml('toThePower', toThePower(9, 3))}
 }
-
+console.log(createBodyHtml())
 //create a server object:
 http
   .createServer(function (req, res) {
@@ -51,4 +51,4 @@ http
     console.log(`listening on "http://localhost:8080"`),
   )
   //the server object listens on port 8080
-  .listen(8080)
+  // .listen(8080)

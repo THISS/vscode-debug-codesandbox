@@ -4,10 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "devDependencies": {
-    "@types/node": "^17.0.21"
+    "@types/node": "^17.0.21",
+    "nodemon": "^2.0.19"
   },
   "packageManager": "yarn@3.2.2"
 }

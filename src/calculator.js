@@ -8,8 +8,7 @@ let result
  * @returns {number} the result of adding a and b together
  */
 function addTwoNumbersTogether(a, b) {
-  result += a + b
-  return result
+  return a + b
 }
 /**
  * add all numbers passed in
@@ -17,9 +16,9 @@ function addTwoNumbersTogether(a, b) {
  * @returns {number}
  */
 function sum(arrayOfNumbers) {
-  const numbersToSum = [...arrayOfNumbers, ...args]
-  for (let i = numbersToSum.length; i > 0; i--) {
-    result = 0
+  const numbersToSum = arrayOfNumbers//TODO: [...arrayOfNumbers if isArray, ...arguments]
+  result = 0
+  for (let i = numbersToSum.length - 1; i >= 0; i--) {
     result = addTwoNumbersTogether(result, numbersToSum[i])
   }
   return result
