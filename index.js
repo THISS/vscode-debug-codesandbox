@@ -43,10 +43,12 @@ http
   .createServer(function (req, res) {
     const body = createBodyHtml()
     const formatResponse = createDocument(body)
-    res.write(formatResponse) //write a response to the client
+    //write a response to the client
+    res.write(formatResponse)
     res.end() //end the response
   })
   .on('listening', (port) =>
     console.log(`listening on "http://localhost:8080"`),
   )
-  .listen(8080) //the server object listens on port 8080
+  //the server object listens on port 8080
+  .listen(8080)
