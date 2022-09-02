@@ -16,10 +16,13 @@ function addTwoNumbersTogether(a, b) {
  * @returns {number}
  */
 function sum(arrayOfNumbers) {
-  const numbersToSum = arrayOfNumbers//TODO: [...arrayOfNumbers if isArray, ...arguments]
+  const numbersToSum = arrayOfNumbers //TODO: [...arrayOfNumbers if isArray, ...arguments]
   result = 0
   for (let i = numbersToSum.length - 1; i >= 0; i--) {
-    result = addTwoNumbersTogether(result, numbersToSum[i])
+    result = addTwoNumbersTogether(
+      result,
+      numbersToSum[i],
+    )
   }
   return result
 }
